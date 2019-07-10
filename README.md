@@ -112,3 +112,9 @@ export PATH=/usr/local/subversion_1.9.7/bin:$PATH
 ### 至此已经搞定了全部svn源码编译安装
 `配置svn等相关方法可以自行google`
 
+
+svnauthz-validate常用于检查svn文件；可使用方法如下：
+`$ svnauthz-validate /srv/svn/conf/authz`
+
+
+
