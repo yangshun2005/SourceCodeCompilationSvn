@@ -7,35 +7,35 @@ yum install wget -y
 yum -y groupinstall "Development tools"
 yum -y install expat-devel pcre pcre-devel openssl-devel
 
-# apr install
+#### apr install
 wget https://mirrors.aliyun.com/apache/apr/apr-1.6.5.tar.gz 
 tar zxf apr-1.6.5.tar.gz
 cd apr-1.6.5
 ./configure --prefix=/usr/local/apr
 make && make install
 
-# apr-util install
+#### apr-util install
 wget https://mirrors.aliyun.com/apache/apr/apr-util-1.6.1.tar.gz
 tar zxf apr-util-1.6.1.tar.gz
 cd apr-util-1.6.1
 ./configure --prefix=/usr/apr-util --with-apr=/usr/local/apr
 make && make install
 
-# zlib install
+#### zlib install
 wget http://www.zlib.net/zlib-1.2.11.tar.gz
 tar zxf zlib-1.2.11.tar.gz
 cd zlib-1.2.11
 ./configure 
 make &&make install
 
-# sqlite install
+#### sqlite install
 wget http://www.sqlite.com/2017/sqlite-autoconf-3210000.tar.gz
 tar zxf sqlite-autoconf-3210000.tar.gz
 cd sqlite-autoconf-3210000
 ./configure
 make && make install
 
-# 本范围可根据自己需要选择安装与否
+#### 本范围可根据自己需要选择安装与否
 ```
 # 安装openssl1.0.1u
 wget https://www.openssl.org/source/old/1.0.1/openssl-1.0.1u.tar.gz
@@ -97,7 +97,7 @@ source /etc/profile
 
 ```
 
-
+#### svn install
 wget https://mirrors.aliyun.com/apache/subversion/subversion-1.9.10.tar.gz
 tar zxf subversion-1.9.10.tar.gz
 cd subversion-1.9.10
